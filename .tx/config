@@ -1,0 +1,8 @@
+[main]
+host = https://www.transifex.com
+
+[sensei-by-woothemes.woothemes-sensei]
+file_filter = languages/woothemes-sensei-<lang>.po
+source_file = resources/woothemes-sensei.pot
+source_lang = en
+type = PO
