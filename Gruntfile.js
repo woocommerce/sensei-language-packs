@@ -72,12 +72,12 @@ module.exports = function( grunt ) {
 			done  = this.async();
 
 		files.forEach( function ( file ) {
-			var lang = file.replace( /(^woothemes-sensei-)(.+)(.po)/, '$2' );
+			var lang = file.replace( /(^sensei-lms-)(.+)(.po)/, '$2' );
 			if ( lang !== file ) {
 				var dest = 'packages/' + lang + '.zip';
 				var zip  = new require('node-zip')();
-				zip.file( 'woothemes-sensei-' + lang + '.po', fs.readFileSync( 'languages/woothemes-sensei-' + lang + '.po' ) );
-				zip.file( 'woothemes-sensei-' + lang + '.mo', fs.readFileSync( 'languages/woothemes-sensei-' + lang + '.mo' ) );
+				zip.file( 'sensei-lms-' + lang + '.po', fs.readFileSync( 'languages/sensei-lms-' + lang + '.po' ) );
+				zip.file( 'sensei-lms-' + lang + '.mo', fs.readFileSync( 'languages/sensei-lms-' + lang + '.mo' ) );
 
 				var data = zip.generate({
 					base64: false,

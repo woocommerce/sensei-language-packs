@@ -2,7 +2,8 @@
 host = https://www.transifex.com
 
 [sensei-by-woothemes.woothemes-sensei]
-file_filter = languages/woothemes-sensei-<lang>.po
-source_file = resources/woothemes-sensei.pot
+file_filter = languages/sensei-lms-<lang>.po
+source_file = resources/sensei-lms.pot
 source_lang = en
 type = PO
+minimum_perc = 30
